@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using NationalInstruments.ModularInstruments.NISwitch;
 using NationalInstruments.ModularInstruments.SystemServices.DeviceServices;
+using System.Drawing;
 
 namespace NationalInstruments.Examples.ControllingAnIndividualRelay
 {
@@ -156,6 +157,7 @@ namespace NationalInstruments.Examples.ControllingAnIndividualRelay
         {
             MessageBox.Show(e.ToString(), "Warning");
         }
+
         private void CloseSession()
         {
             if (switchSession != null)
